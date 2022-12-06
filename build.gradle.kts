@@ -1,9 +1,3 @@
-buildscript {
-    // This throws exception
-    val myProperty: kotlin.String by project
-    println(myProperty)
+plugins {
+    id("my-plugin")
 }
-
-// This works
-val myProperty: kotlin.String by project
-println(myProperty)
